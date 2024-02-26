@@ -1,0 +1,12 @@
+{
+  "short_name": "Zoo",
+  "name": "FantaZoo",
+  "icons": [{
+    "src": "img/LOGOZOO.png",
+    "type": "image/png",
+    "sizes": "200x131"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}

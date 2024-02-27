@@ -1,0 +1,18 @@
+main {
+  background-color: #AFE9AE;
+}
+
+main div#listas {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section h3 {
+  text-align: center;
+}
+
+main button {
+  position: relative;
+  left: 80%;
+  bottom: 5px;
+}

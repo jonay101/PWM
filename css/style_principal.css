@@ -1,0 +1,8 @@
+main {
+  background-color: #AFE9AE;
+}
+
+#imagen {
+  transform: scale(0.70);
+  align-self: center;
+}

@@ -7,12 +7,12 @@ async function cargarEstructura() {
     let appDiv = document.getElementById('app');
 
     // Cargar estructura estática
-    appDiv.appendChild(await cargarTemplate('../html/header.html'));
-    appDiv.appendChild(await cargarTemplate('../html/home.html'));
-    appDiv.appendChild(await cargarTemplate('../html/footer.html'));
+    appDiv.appendChild(await cargarTemplate('../html/Header.html'));
+    appDiv.appendChild(await cargarTemplate('../html/Home.html'));
+    appDiv.appendChild(await cargarTemplate('../html/Footer.html'));
 
     // Agregar controladores de eventos a los enlaces
-    let enlaces = document.querySelectorAll('.nav-item, .nav-icon');
+    let enlaces = document.querySelectorAll('.nav-item','.logo');
     enlaces.forEach(enlace => {
       enlace.addEventListener('click', cargarPagina);
     });
@@ -48,7 +48,13 @@ function cargarContenidoDinamico() {
 
 async function cargarPagina(e) {
   e.preventDefault();
-  let nombreArchivo = e.target.getAttribute('href');
+  let target = e.target;
+  let nombreArchivo;
+  if (target.tagName.toLowerCase() === 'img') {
+    target = target.parentElement;
+  }
+  nombreArchivo = "../html/" + target.getAttribute('href');
+  console.log(nombreArchivo);
   let mainSection = document.querySelector('main');
   mainSection.innerHTML = '';  // Limpiar el contenido existente
   mainSection.appendChild(await cargarTemplate(nombreArchivo));

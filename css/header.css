@@ -1,80 +1,78 @@
 .header {
   background: #A6E5D0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  height: 9rem;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+  height: 10rem;
+  position: sticky;
+  z-index: 1;
 }
 
-.logo-container {
-  display: block;
+.header .logo-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  width: 15%;
   text-align: center;
   background-color: #A6E5D0;
   border: none;
+  padding-left: 20%;
+
 }
 
-.logo-container img {
-  padding-top: 15px;
-  transform: scale(0.8);
+.header .logo-container img {
+  transform: scale(0.6);
   cursor: pointer;
 }
 
-.logo-container img:hover {
-  transform: scale(1.1);
+.header .logo-container img:hover {
+  transform: scale(0.8);
 }
 
-img:hover{
-  transform: scale(1.5);
+.header img:hover{
+  transform: scale(2.5);
   transition: 200ms;
 }
 
-a:hover{
+.header a:hover{
   font-size: larger;
   transition: 200ms;
 }
 
-nav {
-  height: 2rem;
+.header nav {
+  height: 7rem;
+  width: 35%;
   cursor: pointer;
   position: sticky;
   align-items: center;
   text-align: center;
-  padding-bottom: 3.5rem;
-  padding-right: 5rem;
+  padding-bottom: 1.5rem;
+  margin-right: auto;
 }
 
-nav ul {
+.header nav ul {
   list-style: none;
   padding-right: 20px;
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  justify-content: center;
   flex-direction:row;
   position: relative;
+  height: 5rem;
   margin-top: 2rem;
   background-color: #b3d4fc;
 }
 
-nav ul li{
-  color: #000000;
+.header nav ul li{
   display: inline-block;
   margin-right: 1rem;
 }
 
-.nav-icon {
+.header .nav-icon {
   width: 1.8rem;
-  margin-right: .5rem
+  transform: scale(1.5);
 }
 
-h1 {
+.header span {
   font: bold 20px verdana, sans-serif;
 }

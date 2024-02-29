@@ -1,19 +1,15 @@
-main {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #AFE9AF;
-  padding: 0 20px 20px 20px;
-}
-h1{
+.main h1{
   text-align: center;
 }
 
-figure{
+.main figure{
   text-align: center;
 }
 
-h2{
+.main h2{
   position: relative;
   font-size: medium;
   top: 25px;
 }
+
+

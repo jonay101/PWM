@@ -17,6 +17,13 @@ html {
   line-height: 1.4;
 }
 
+body {
+  width: 1920px;
+  height: 1080px;
+  margin: 15px auto;
+  text-align: left;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

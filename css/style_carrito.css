@@ -1,6 +1,14 @@
-main div#listas {
-  display: flex;
-  justify-content: space-between;
+main  {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main section#lista-entradas {
+  grid-column: 1;
+}
+
+main section#lista-merchandising {
+  grid-column: 2;
 }
 
 main section h3 {
@@ -8,7 +16,8 @@ main section h3 {
 }
 
 main button {
+  grid-column: 2;
+  width: 120px;
   position: relative;
-  left: 80%;
-  bottom: 5px;
+  left: 85%;
 }

@@ -15,6 +15,10 @@ main section h3 {
   text-align: center;
 }
 
+main section ul li{
+  display: inline;
+}
+
 main button {
   grid-column: 2;
   width: 120px;

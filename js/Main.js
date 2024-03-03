@@ -53,7 +53,12 @@ async function cargarPagina(e) {
   if (target.tagName.toLowerCase() === 'img') {
     target = target.parentElement;
   }
-  nombreArchivo = "../html/" + target.getAttribute('href');
+  if (target.tagName.toLowerCase() === "button") {
+    nombreArchivo = "../html/" + target.getAttribute("name") + ".html"
+  }
+  else {
+    nombreArchivo = "../html/" + target.getAttribute('href');
+  }
   let mainSection = document.querySelector('main');
   mainSection.innerHTML = '';  // Limpiar el contenido existente
 

@@ -15,7 +15,10 @@
   }
 
   let ulDivMerchandising = document.querySelector("section#lista-merchandising div ul")
-  for (var i = 0; i < entradas.length; i++) {
+  for (var i = 0; i < productos.length; i++) {
     ulDivMerchandising.innerHTML += `<li>${elementoLista}</li>`
   }
+
+  let botonPago = document.querySelector("main button")
+  botonPago.addEventListener('click', cargarPagina)
 })();

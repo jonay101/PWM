@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+main div#contenedor-entradas {
+  display: grid;
+  column-gap: 20px;
+}
+
+main section {
+  background: #FFFFFF;
+  border: 1px solid #555555;
+}
+
+main section label {
+  font-size: 25px;
+}
+
+main section#calendario {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main section#entradas {
+  grid-column: 2;
+}
+
+main section#entradas p {
+  text-align: center;
+  margin: 8px;
+}
+
+main section#entradas div#contenedor-boton {
+  display: flex;
+  justify-content: center;
+}

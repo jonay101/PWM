@@ -59,6 +59,13 @@ async function cargarPagina(e) {
   else {
     nombreArchivo = "../html/" + target.getAttribute('href');
   }
+
+  // Eliminar los listener internos de la página
+  let enlacesInternosEliminar = document.querySelectorAll("main .nav-item");
+  enlacesInternosEliminar.forEach(enlace => {
+    enlace.removeEventListener('click', cargarPagina)
+  })
+
   let mainSection = document.querySelector('main');
   mainSection.innerHTML = '';  // Limpiar el contenido existente
 
@@ -67,6 +74,12 @@ async function cargarPagina(e) {
   oldScripts.forEach(script => script.remove());
 
   mainSection.appendChild(await cargarTemplate(nombreArchivo));
+
+  // Añadir los listeners internos de la página
+  let enlacesInternos = document.querySelectorAll("main .nav-item");
+  enlacesInternos.forEach(enlace => {
+    enlace.addEventListener('click', cargarPagina)
+  })
 
   // Para cada script en el contenido cargado
   let scripts = mainSection.getElementsByTagName('script');

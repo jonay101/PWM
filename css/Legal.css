@@ -1,0 +1,40 @@
+main{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  background: #888888;
+  height: 25rem;
+  justify-content: space-between;
+}
+main aside ul li{
+  margin: 2.8rem 0;
+}
+
+main li:hover{
+  font-size: larger;
+  transition: 200ms;
+}
+
+main article {
+  grid-column: 2;
+  padding-left: 2rem;
+  width: 85rem;
+  height: 35rem;
+}
+main article span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* Puedes cambiar el color de fondo según lo necesites */
+  box-sizing: border-box; /* Añade esta línea */
+  overflow-y: auto; /* Añade esta línea */
+}

@@ -12,7 +12,7 @@ async function cargarEstructura() {
     appDiv.appendChild(await cargarTemplate('../html/Footer.html'));
 
     // Agregar controladores de eventos a los enlaces
-    let enlaces = document.querySelectorAll('.nav-item','.logo');
+    let enlaces = document.querySelectorAll('.nav-item,.logo,.nav-icon');
     enlaces.forEach(enlace => {
       enlace.addEventListener('click', cargarPagina);
     });
@@ -54,8 +54,23 @@ async function cargarPagina(e) {
     target = target.parentElement;
   }
   nombreArchivo = "../html/" + target.getAttribute('href');
-  console.log(nombreArchivo);
   let mainSection = document.querySelector('main');
   mainSection.innerHTML = '';  // Limpiar el contenido existente
+
+  // Eliminar los scripts antiguos
+  let oldScripts = document.querySelectorAll('script.dynamic-script');
+  oldScripts.forEach(script => script.remove());
+
   mainSection.appendChild(await cargarTemplate(nombreArchivo));
+
+  // Para cada script en el contenido cargado
+  let scripts = mainSection.getElementsByTagName('script');
+  for (let i = 0; i < scripts.length; i++) {
+    if (scripts[i].src) {
+      let script = document.createElement('script');
+      script.src = scripts[i].src;
+      script.className = 'dynamic-script';  // Añadir una clase para poder eliminarlo más tarde
+      document.body.appendChild(script);
+    }
+  }
 }

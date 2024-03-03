@@ -8,3 +8,12 @@
   position: relative;
   margin-top: auto;
 }
+.footer img:hover{
+  transform: scale(2.5);
+  transition: 200ms;
+}
+
+.footer a:hover{
+  font-size: larger;
+  transition: 200ms;
+}

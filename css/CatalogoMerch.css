@@ -4,9 +4,9 @@
   justify-content: space-between;
 }
 .producto {
-  flex: 0 0 calc(50% - 20px);
-  border: 1px solid #000;
-  margin: 10px;
+  flex: 0 0 calc(35% - 20px);
+  border: 10px solid #b3d4fc;
+  margin: 120px;
   padding: 10px;
   box-sizing: border-box;
 }

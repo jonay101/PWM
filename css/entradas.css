@@ -37,3 +37,7 @@ main section#entradas div#contenedor-boton {
   display: flex;
   justify-content: center;
 }
+
+main section#entradas button:hover {
+  cursor: pointer;
+}

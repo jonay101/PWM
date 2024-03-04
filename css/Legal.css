@@ -20,6 +20,7 @@ main aside ul li{
 main li:hover{
   font-size: larger;
   transition: 200ms;
+  cursor: pointer;
 }
 
 main article {

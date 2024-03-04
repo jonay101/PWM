@@ -40,10 +40,12 @@ main a{
   width:120px;
   position: relative;
   left: 80%;
+  pointer-events: none;
 }
 
 main button {
   width: 120px;
+  pointer-events: auto;
 }
 
 main button:hover{

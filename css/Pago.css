@@ -40,6 +40,14 @@ main section#formulario-pago div#contenedor-boton {
   bottom: 5px;
 }
 
+main section#formulario-pago a {
+  pointer-events: none;
+}
+
+main section#formulario-pago button {
+  pointer-events: auto;
+}
+
 main section#formulario-pago button:hover {
   cursor: pointer;
 }

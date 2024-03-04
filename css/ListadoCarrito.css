@@ -1,0 +1,30 @@
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+
+.info {
+  font-weight: bold;
+}
+
+.precio {
+  color: #007bff;
+}
+
+.cantidad {
+  color: #28a745;
+}

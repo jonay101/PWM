@@ -1,8 +1,38 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la sección de filtros */
+.filtro {
+  background-color: #A6E5D0;
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 calc(10% - 20px); /* Ajusta el tamaño del filtro */
+  border: 1px solid #007bff;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.filtro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filtro li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Estilos para la sección del catálogo */
 .catalogo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .animal {
   flex: 0 0 calc(50% - 20px);
   border: 1px solid #000;
@@ -10,10 +40,14 @@
   padding: 10px;
   box-sizing: border-box;
 }
+
 .animal_img {
   width: 100%;
 }
+
 .animal_name {
   font-size: 20px;
   margin: 10px 0;
 }
+
+

@@ -37,4 +37,5 @@ main article span {
   background-color: #f9f9f9; /* Puedes cambiar el color de fondo según lo necesites */
   box-sizing: border-box; /* Añade esta línea */
   overflow-y: auto; /* Añade esta línea */
+  word-wrap: break-word; /* Añade esta línea */
 }

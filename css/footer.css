@@ -1,5 +1,4 @@
 .footer {
-  background-color: #A6E5D0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,9 +6,20 @@
   height: 3.5rem;
   position: relative;
   margin-top: auto;
+  margin-bottom: 1.5rem;
 }
+
+.footer nav{
+  background: #b3d4fc;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
 .footer img:hover{
-  transform: scale(2.5);
+  transform: scale(1.5);
   transition: 200ms;
 }
 

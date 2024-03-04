@@ -49,45 +49,40 @@ function cargarContenidoDinamico() {
 async function cargarPagina(e) {
   e.preventDefault();
   let target = e.target;
-  let nombreArchivo;
-  if (target.tagName.toLowerCase() === 'img') {
+  if (target.tagName.toLowerCase() === 'img' || target.tagName.toLowerCase() === "button") {
     target = target.parentElement;
   }
-  if (target.tagName.toLowerCase() === "button") {
-    nombreArchivo = "../html/" + target.getAttribute("name") + ".html"
-  }
-  else {
-    nombreArchivo = "../html/" + target.getAttribute('href');
-  }
+  let nombreArchivo = "../html/" + target.getAttribute('href');
 
-  // Eliminar los listener internos de la página
+  limpiarElementos();
+  let mainSection = document.querySelector('main');
+  mainSection.innerHTML = '';  // Limpiar el contenido existente
+
+  mainSection.appendChild(await cargarTemplate(nombreArchivo));
+
+  cargarElementos(mainSection);
+}
+
+function limpiarElementos() {
   let enlacesInternosEliminar = document.querySelectorAll("main .nav-item");
   enlacesInternosEliminar.forEach(enlace => {
     enlace.removeEventListener('click', cargarPagina)
   })
-
-  let mainSection = document.querySelector('main');
-  mainSection.innerHTML = '';  // Limpiar el contenido existente
-
   // Eliminar los scripts antiguos
   let oldScripts = document.querySelectorAll('script.dynamic-script');
   oldScripts.forEach(script => script.remove());
-
-  mainSection.appendChild(await cargarTemplate(nombreArchivo));
-
-  // Añadir los listeners internos de la página
-  let enlacesInternos = document.querySelectorAll("main .nav-item");
+}
+function cargarElementos(mainSection) {
+  let enlacesInternos = mainSection.querySelectorAll("main .nav-item");
   enlacesInternos.forEach(enlace => {
     enlace.addEventListener('click', cargarPagina)
   })
-
-  // Para cada script en el contenido cargado
-  let scripts = mainSection.getElementsByTagName('script');
+  let scripts=mainSection.getElementsByTagName('script')
   for (let i = 0; i < scripts.length; i++) {
     if (scripts[i].src) {
       let script = document.createElement('script');
       script.src = scripts[i].src;
-      script.className = 'dynamic-script';  // Añadir una clase para poder eliminarlo más tarde
+      script.className = 'dynamic-script';
       document.body.appendChild(script);
     }
   }

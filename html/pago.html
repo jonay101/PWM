@@ -1,34 +1,40 @@
+<link rel="stylesheet" href="../css/pago.css">
+
 <main>
-  <aside>
-    <label for="fecha-elegida">Fecha elegida: </label>
-    <input type="date" id="fecha-elegida" disabled="disabled"><br>
-    <label for="oferta-elegida">Oferta elegida: </label>
-    <input type="text" id="oferta-elegida" disabled="disabled"><br>
-    <label for="extras">Extras: </label>
-    <input type="text" id="extras" disabled="disabled"><br>
-  </aside>
+  <div id="contenedor-pago">
+    <aside>
+      <label for="fecha-elegida">Fecha elegida: </label>
+      <input type="date" id="fecha-elegida" disabled="disabled"><br>
+      <label for="oferta-elegida">Oferta elegida: </label>
+      <input type="text" id="oferta-elegida" disabled="disabled"><br>
+      <label for="extras">Extras: </label>
+      <input type="text" id="extras" disabled="disabled"><br>
+    </aside>
 
-  <section id="formulario-pago">
-    <form>
-      <label for="nombre-comprador">Nombre y apellidos: </label>
-      <input type="text" id="nombre-comprador"><br>
-      <label for="email-comprador">Correo electronico: </label>
-      <input type="email" id="email-comprador"><br>
-      <label for="direccion-comprador">Direccion: </label>
-      <input type="text" id="direccion-comprador"><br>
-      <input type="radio" id="boton-tarjeta" name="metodo-pago" value="Tarjeta de credito">
-      <label for="boton-tarjeta"> <img src="/img/credit_card.png"> Tarjeta de credito</label>
-      <input type="radio" id="boton-paypal" name="metodo-pago" value="PayPal">
-      <label for="boton-paypal"><img src="/img/paypal.png"> Paypal</label><br>
-      <button>Pagar</button>
-    </form>
-  </section>
+    <section id="formulario-pago">
+      <form>
+        <label for="nombre-comprador">Nombre y apellidos: </label>
+        <input type="text" id="nombre-comprador"><br>
+        <label for="email-comprador">Correo electronico: </label>
+        <input type="email" id="email-comprador"><br>
+        <label for="direccion-comprador">Direccion: </label>
+        <input type="text" id="direccion-comprador"><br>
+        <input type="radio" id="boton-tarjeta" name="metodo-pago" value="Tarjeta de credito">
+        <label for="boton-tarjeta"> <img src="/img/credit_card.png"> Tarjeta de credito</label>
+        <input type="radio" id="boton-paypal" name="metodo-pago" value="PayPal">
+        <label for="boton-paypal"><img src="/img/paypal.png"> Paypal</label><br>
+        <div id="contenedor-boton">
+          <button>Pagar</button>
+        </div>
+      </form>
+    </section>
 
-  <footer>
-    <ul>
-      <li><a href="">Informacion legal</a></li>
-      <li><a href="">Normativa del zoologico</a></li>
-      <li><a href="">Terminos y condiciones</a></li>
-    </ul>
-  </footer>
+    <footer>
+      <ul>
+        <li><a href="Legal.html" class="nav-item">Informacion legal</a></li>
+        <li><a href="Legal.html" class="nav-item">Normativa del zoologico</a></li>
+        <li><a href="Legal.html" class="nav-item">Terminos y condiciones</a></li>
+      </ul>
+    </footer>
+  </div>
 </main>

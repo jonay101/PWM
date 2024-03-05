@@ -14,7 +14,11 @@ main{
 .main h2{
   position: relative;
   font-size: medium;
-  top: 25px;
+  top: 1.5rem;
+}
+
+.main figure img{
+  width: 35rem;
 }
 
 

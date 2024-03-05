@@ -34,10 +34,20 @@ main section ul {
   padding-left: 0;
 }
 
-main button {
+main a{
   grid-column: 2;
-  width: 120px;
+  margin-top: 1.5rem;
+  width:120px;
   position: relative;
   left: 80%;
-  margin-top: 1.5rem;
+  pointer-events: none;
+}
+
+main button {
+  width: 120px;
+  pointer-events: auto;
+}
+
+main button:hover{
+  cursor: pointer;
 }

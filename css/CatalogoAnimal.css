@@ -1,53 +1,44 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilos para la sección de filtros */
-.filtro {
-  background-color: #A6E5D0;
-  padding: 10px;
-  text-align: center;
-  flex: 0 0 calc(10% - 20px); /* Ajusta el tamaño del filtro */
-  border: 1px solid #007bff;
-  margin: 10px;
-  box-sizing: border-box;
-}
-
-.filtro ul {
-  list-style: none;
-  padding: 0;
-}
-
-.filtro li {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-/* Estilos para la sección del catálogo */
+/* Estilos para el catálogo y los filtros */
 .catalogo {
+  text-align: center;
+}
+
+.filtros-catalogo {
+  margin-bottom: 20px;
+}
+
+.filtro-catalogo {
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+.filtro-catalogo.active-btn {
+  background-color: #ddd;
+}
+
+.animales {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.animal {
-  flex: 0 0 calc(50% - 20px);
-  border: 1px solid #000;
+.Animal {
   margin: 10px;
   padding: 10px;
-  box-sizing: border-box;
+  border: 1px solid #ddd;
+  width: 200px;
 }
 
-.animal_img {
+/* Estilos para las imágenes de los animales */
+.animal-img img {
   width: 100%;
+  height: auto;
 }
 
-.animal_name {
-  font-size: 20px;
-  margin: 10px 0;
+/* Estilos para la descripción de los animales */
+.animalDescription {
+  text-align: left;
 }
-
-

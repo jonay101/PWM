@@ -1,11 +1,7 @@
-(function() {
-  let elementoLista = `<ul>
-      <li><img src="../img/twitter-outlined.png"> </li>
-      <li>Información del producto</li>
-      <li>Precio del producto</li>
-      <li>Cantidad del producto</li>
-  </ul>`
+(async function() {
+  let elementoLista = (await cargarTemplateElementoLista()).outerHTML
 
+  await cargarTemplateElementoLista()
   let entradas = ["Entrada 1", "Entrada 2", "Entrada 3", "Entrada x"]
   let productos = ["Producto 1", "Producto 2", "Producto 3", "Producto 4"]
 
@@ -19,3 +15,16 @@
     ulDivMerchandising.innerHTML += `<li>${elementoLista}</li>`
   }
 })();
+
+// Función que carga el template del elemento de la lista y lo devuelve
+async function cargarTemplateElementoLista() {
+  let response = await fetch("../html/ListadoCarrito.html");
+  let text = await response.text();
+  let templateElement = document.createElement("template");
+  templateElement.innerHTML = text
+
+  let linkElement = templateElement.content.querySelector("link");
+  document.querySelector("main").appendChild(linkElement)
+
+  return templateElement.content.querySelector("main ul li ul");
+}

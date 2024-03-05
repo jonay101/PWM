@@ -11,9 +11,10 @@
   }
 
   let ulDivMerchandising = document.querySelector("section#lista-merchandising div ul")
-  for (var i = 0; i < productos.length; i++) {
+  for (i = 0; i < productos.length; i++) {
     ulDivMerchandising.innerHTML += `<li>${elementoLista}</li>`
   }
+  cargarListenersEliminar()
 })();
 
 // Función que carga el template del elemento de la lista y lo devuelve
@@ -27,4 +28,15 @@ async function cargarTemplateElementoLista() {
   document.querySelector("main").appendChild(linkElement)
 
   return templateElement.content.querySelector("main ul li ul");
+}
+
+function cargarListenersEliminar() {
+  for (const botonEliminar of document.querySelectorAll("main button.boton-eliminar")) {
+    botonEliminar.addEventListener('click', eliminarElemento)
+  }
+}
+
+function eliminarElemento(evt) {
+  let elementoCarrito = evt.target.parentNode.parentNode.parentNode;
+  elementoCarrito.parentNode.removeChild(elementoCarrito)
 }

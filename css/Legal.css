@@ -2,7 +2,7 @@ main{
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 4rem;
 }
 
 main aside {
@@ -10,8 +10,8 @@ main aside {
   flex-direction: column;
   grid-column: 1;
   background: #888888;
-  height: 25rem;
   justify-content: space-between;
+  padding-right: 2.5rem;
 }
 main aside ul li{
   margin: 2.8rem 0;
@@ -35,8 +35,8 @@ main article span {
   height: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9; /* Puedes cambiar el color de fondo según lo necesites */
-  box-sizing: border-box; /* Añade esta línea */
-  overflow-y: auto; /* Añade esta línea */
-  word-wrap: break-word; /* Añade esta línea */
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  overflow-y: auto;
+  word-wrap: break-word;
 }

@@ -87,3 +87,7 @@ function cargarElementos(mainSection) {
     }
   }
 }
+
+window.cargarSubTemplate = async function(url) {
+  return cargarTemplate(url);
+}

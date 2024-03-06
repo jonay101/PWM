@@ -5,6 +5,9 @@
   let productos = ["Producto 1", "Producto 2", "Producto 3", "Producto 4"];
   let precios = ["15 €", "25 €", "35 €", "45 €"];
 
+  let mainElement = document.querySelector("main");
+  mainElement.appendChild(template.querySelector("link"))
+
   let ulDivEntradas = document.querySelector("section#lista-entradas div ul");
   for (var i = 0; i < entradas.length; i++) {
     let nuevoElemento = elementoLista.cloneNode(true);
@@ -16,7 +19,7 @@
   let ulDivMerchandising = document.querySelector("section#lista-merchandising div ul")
   for (i = 0; i < productos.length; i++) {
     let nuevoElemento = elementoLista.cloneNode(true);
-    nuevoElemento.querySelector('.info').textContent = entradas[i];
+    nuevoElemento.querySelector('.info').textContent = productos[i];
     nuevoElemento.querySelector('.precio').textContent = precios[i];
     ulDivMerchandising.innerHTML += `<li>${nuevoElemento.outerHTML}</li>`;
   }

@@ -2,5 +2,5 @@ main ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
+  width: 50%;
 }

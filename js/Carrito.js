@@ -3,7 +3,7 @@
   let elementoLista = template.querySelector("ul li ul");
   let entradas = ["Entrada 1", "Entrada 2", "Entrada 3", "Entrada x"];
   let productos = ["Producto 1", "Producto 2", "Producto 3", "Producto 4"];
-  let precios = ["15", "25", "35", "45"];
+  let precios = ["15 €", "25 €", "35 €", "45 €"];
 
   let ulDivEntradas = document.querySelector("section#lista-entradas div ul");
   for (var i = 0; i < entradas.length; i++) {

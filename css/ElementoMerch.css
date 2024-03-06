@@ -1,0 +1,22 @@
+main ul li {
+  flex: 1 0 21%;
+  margin: 1%;
+  list-style-type: none;
+  display: flow;
+}
+
+.info {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.precio {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #f00;
+}
+
+main ul li aside {
+  display: block;
+}
+

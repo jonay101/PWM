@@ -1,80 +1,65 @@
+<link rel = "stylesheet" href="../css/CatalogoAnimal.css">
 <main>
-  <link rel = "stylesheet" href="../css/CatalogoAnimal.css">
-
-  <meta charset="UTF-8">
   <script src="../js/FiltroAnimal.js"></script>
-
-  <section class="catalogo">
-    <div class="contenedor-catalogo">
-      <div class="cabeza-catalogo">
-        <h2>Catalogo de los animales del zoo.</h2>
+  <div class="contenedor-catalogo">
+    <section class="cabeza-catalogo">
+      <h1>Catalogo de los animales del zoo.</h1>
+      <aside class="filtros-catalogo" >
         <p> FILTROS: </p>
-      </div>
-
-      <div class="filtros-catalogo" >
         <button type="button" class="filtro-catalogo active-btn" id = "All">All</button>
         <button type="button" class="filtro-catalogo " id = "Aves">Aves</button>
         <button type="button" class="filtro-catalogo " id = "Peces">Peces</button>
         <button type="button" class="filtro-catalogo " id = "Mamiferos">Mamiferos</button>
         <button type="button" class="filtro-catalogo " id = "Herbivoros">Herbivoros</button>
         <button type="button" class="filtro-catalogo " id = "Carnivoros">Carnivoros</button>
-      </div>
+      </aside>
+    </section>
 
-      <div class="animales">
-        <!-- Animal 1 -->
-        <div class="Animal Aves">
-          <div class="animal-img">
-            <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
-          </div>
-          <div class="animalDescription">
-            <h2 class="animal_name">Nombre del animal tipo aves</h2>
-            <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
-            <p class="categoria"> Categories:
+    <ul class="animales">
+      <li class="Animal Aves">
+        <div class="animal-img">
+          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+        </div>
+        <div class="animalDescription">
+          <h2 class="animal_name">Nombre del animal tipo aves</h2>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+          <p class="categoria"> Categories:
             <span> Aves </span></p>
           </div>
+        </li>
+      <li class="Animal Peces">
+        <div class="animal-img">
+          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
         </div>
-
-        <!-- Fin animal 1-->
-        <!-- Animal 1 -->
-        <div class="Animal Peces">
-          <div class="animal-img">
-            <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
-          </div>
-          <div class="animalDescription">
-            <h2 class="animal_name">Nombre del animal tipo peces</h2>
-            <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
-            <p class="categoria"> Categories:
-              <span> Peces </span></p>
-          </div>
+        <div class="animalDescription">
+          <h2 class="animal_name">Nombre del animal tipo peces</h2>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+          <p class="categoria"> Categories:
+            <span> Peces </span></p>
         </div>
-        <!-- Fin animal 1-->
-        <!-- Animal 1 -->
-        <div class="Animal Mamiferos">
-          <div class="animal-img">
-            <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
-          </div>
-          <div class="animalDescription">
-            <h2 class="animal_name">Nombre del animal tipo mamifero</h2>
-            <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
-            <p class="categoria"> Categories:
-              <span> Mamiferos </span></p>
-          </div>
+      </li>
+      <li class="Animal Mamiferos">
+        <div class="animal-img">
+          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
         </div>
-        <!-- Fin animal 1-->
-        <!-- Animal 1 -->
-        <div class="Animal Herbivoros">
-          <div class="animal-img">
-            <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
-          </div>
-          <div class="animalDescription">
-            <h2 class="animal_name">Nombre del animal herbivoro</h2>
-            <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
-            <p class="categoria"> Categories:
-              <span> Herbivoros </span></p>
-          </div>
+        <div class="animalDescription">
+          <h2 class="animal_name">Nombre del animal tipo mamifero</h2>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+          <p class="categoria"> Categories:
+            <span> Mamiferos </span></p>
         </div>
-        <!-- Fin animal 1-->
-      </div>
-    </div>
-  </section>
+      </li>
+      <li class="Animal Herbivoros">
+        <div class="animal-img">
+          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+        </div>
+        <div class="animalDescription">
+          <h2 class="animal_name">Nombre del animal herbivoro</h2>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+          <p class="categoria"> Categories:
+            <span> Herbivoros </span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </main>

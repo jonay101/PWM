@@ -1,8 +1,9 @@
 main ul li {
-  flex: 1 0 21%;
-  margin: 1%;
+  flex: none;
+  margin: 4%;
   list-style-type: none;
-  display: flow;
+  display: block;
+  width: 15rem;
 }
 
 .info {
@@ -18,5 +19,11 @@ main ul li {
 
 main ul li aside {
   display: block;
+  text-align: center;
 }
+
+main ul li img{
+  width: 100%;
+}
+
 

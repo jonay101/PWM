@@ -33,6 +33,10 @@ main section#formulario-pago img {
   transform: scale(0.70);
 }
 
+main section#formulario-pago div.inactivo {
+  display: none;
+}
+
 main section#formulario-pago div#contenedor-boton {
   display: flex;
   justify-content: center;

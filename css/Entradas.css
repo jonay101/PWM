@@ -33,6 +33,14 @@ main section#entradas p {
   margin: 8px;
 }
 
+main section#entradas img {
+  transform: scale(0.7);
+}
+
+main section#entradas div#formulario-entradas input {
+  text-align: center;
+}
+
 main section#entradas div#contenedor-boton {
   display: flex;
   justify-content: center;

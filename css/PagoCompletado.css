@@ -5,3 +5,7 @@ main article {
   font-size: 20px;
   padding: 0.5%;
 }
+
+main article p {
+  margin: 0;
+}

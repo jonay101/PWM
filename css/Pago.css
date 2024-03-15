@@ -29,6 +29,16 @@ main section#formulario-pago {
   justify-content: center;
 }
 
+main section#formulario-pago input:invalid {
+  border: red solid 1px;
+  background: #FBF0F0;
+}
+
+main section#formulario-pago input:valid {
+  border: blue solid 1px;
+  background: #F4F6FF;
+}
+
 main section#formulario-pago img {
   transform: scale(0.70);
 }

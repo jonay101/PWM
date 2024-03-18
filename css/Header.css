@@ -1,3 +1,48 @@
+@media only screen and (max-width: 600px){
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .header .logo-container {
+    background-color: #A6E5D0;
+    border: none;
+    padding-right: 30%;
+    padding-top: 30%;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .header nav {
+    padding-top: -50px;
+    width: 100%;
+  }
+
+  .header nav ul {
+    padding-right: 50%;
+    width: fit-content;
+  }
+
+  .header nav ul li{
+    display: inline-block;
+    margin-right: 0%;
+  }
+
+  .header span {
+    font: bold 1.2rem verdana, sans-serif;
+    position: relative;
+    left: 150px;
+    bottom: 70px;
+  }
+}
+
+
 .header {
   display: flex;
   justify-content: space-evenly;

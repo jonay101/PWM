@@ -8,3 +8,34 @@ main{
   align-items: center;
 }
 
+.contenedor-imagen img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  right: 500px;
+}
+
+.info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info span{
+  color: fuchsia;
+}
+
+.info nav{
+  color: fuchsia;
+}
+
+@media only screen and (max-width: 600px){
+  main{
+    display: grid;
+  }
+  .info{
+    display: grid;
+
+  }
+}
+

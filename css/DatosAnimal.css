@@ -6,33 +6,32 @@ body {
 
 }
 
-.nombre {
+main .nombre {
   text-align: center;
   margin-bottom: 20px;
 }
 
-h1 {
+main .h1 {
   font-size: 24px;
   margin: 0;
 }
 
-h2 {
+main .h2 {
 
   font-size: 18px;
   color: #666;
   margin: 0;
 }
 
-.foto {
+main .foto {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 230px;
   text-align: center;
 }
 
-img {
+main img {
   max-width: 100%;
   height: auto;
 }
@@ -69,4 +68,26 @@ main section hgroup{
 }
 .imagen_principal{
   margin-right: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  main .foto {
+    display: grid;
+    flex-direction: column;
+    padding-left: 3.5rem;
+    margin-right: 50px;
+
+  }
+
+  main .minifoto {
+    margin-top: 20px;
+
+
+  }
+
+  main .descripcion{
+    width: auto;
+    padding-left: 1.0rem;
+  }
+
 }

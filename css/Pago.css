@@ -92,6 +92,8 @@ main footer ul li#normativa {
   main div#contenedor-pago {
     grid-template-columns: repeat(1, 0.8fr);
     grid-template-rows: repeat(3, auto);
+    column-gap: 0;
+    margin-left: 15%;
   }
 
   main aside {

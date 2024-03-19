@@ -87,3 +87,25 @@ main footer ul li#info-legal {
 main footer ul li#normativa {
   grid-column: 2;
 }
+
+@media only screen and (max-width: 600px){
+  main div#contenedor-pago {
+    grid-template-columns: repeat(1, 0.8fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  main aside {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  main section#formulario-pago {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  main footer {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}

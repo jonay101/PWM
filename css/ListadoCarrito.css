@@ -17,14 +17,14 @@
 }
 
 
-.info {
+main .informacion {
   font-weight: bold;
 }
 
-.precio {
+main .precio {
   color: #007bff;
 }
 
-.cantidad {
+main .cantidad {
   color: #28a745;
 }

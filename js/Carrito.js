@@ -11,7 +11,7 @@
   let ulDivEntradas = document.querySelector("section#lista-entradas div ul");
   for (var i = 0; i < entradas.length; i++) {
     let nuevoElemento = elementoLista.cloneNode(true);
-    nuevoElemento.querySelector('.info').textContent = entradas[i];
+    nuevoElemento.querySelector('.informacion').textContent = entradas[i];
     nuevoElemento.querySelector('.precio').textContent = precios[i];
     ulDivEntradas.innerHTML += `<li>${nuevoElemento.outerHTML}</li>`;
   }
@@ -19,7 +19,7 @@
   let ulDivMerchandising = document.querySelector("section#lista-merchandising div ul")
   for (i = 0; i < productos.length; i++) {
     let nuevoElemento = elementoLista.cloneNode(true);
-    nuevoElemento.querySelector('.info').textContent = productos[i];
+    nuevoElemento.querySelector('.informacion').textContent = productos[i];
     nuevoElemento.querySelector('.precio').textContent = precios[i];
     ulDivMerchandising.innerHTML += `<li>${nuevoElemento.outerHTML}</li>`;
   }

@@ -1,0 +1,19 @@
+{
+  "Animales": [
+    {
+      "nombreAnimal":  "Tigle",
+      "clase": "Mammalia",
+      "img": "freshberries.png"
+    },
+    {
+      "nombreAnimal":  "Tiburón",
+      "clase": "Mammalia",
+      "img": "freshberries.png"    },
+    {
+      "nombreAnimal":  "",
+      "clase": "Mammalia",
+      "img": "freshberries.png"
+    }
+  ]
+}
+

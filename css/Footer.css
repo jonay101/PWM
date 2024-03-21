@@ -35,8 +35,28 @@
 }
 
 @media only screen and (max-width: 600px){
+  .footer{
+    margin-bottom: 0.1rem;
+  }
+
   .footer nav{
     width: 100%;
-    font-size: smaller;
+    font-size: small;
+  }
+
+  .footer img{
+    transform:  scale(0.75);
+  }
+
+  .footer a{
+    margin-right: 0.2rem;
+  }
+
+  .footer a:hover{
+    font-size: small;
+  }
+
+  .footer img:hover{
+    transform:  scale(0.8);
   }
 }

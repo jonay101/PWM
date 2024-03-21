@@ -17,8 +17,13 @@ main{
   top: 1.5rem;
 }
 
-.main figure img{
+main img{
   width: 35rem;
 }
 
+@media only screen and (max-width: 600px) {
+  main img{
+    width: 30rem;
+  }
+}
 

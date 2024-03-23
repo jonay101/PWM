@@ -1,10 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+  "Politica de privacidad": "En FantaZoo, respetamos su privacidad y nos comprometemos a protegerla. Nuestra política de privacidad explica qué datos recopilamos, cómo los utilizamos, cómo los protegemos y sus derechos. Si tiene alguna pregunta, no dude en contactarnos al +34 123 456 789.",
+  "Sobre nosotros": "FataZoo es un zoológico comprometido con la conservación de la vida silvestre. Nuestra misión es educar al público sobre la diversidad de la fauna y la importancia de su conservación. Estamos ubicados en Las Palmas de Gran Canaria y abiertos al público todos los días de 9:00 a 18:00.",
+  "Aviso legal": "La seccion de animales del sitio web de FantaZoo. FantaZoo no se hace responsable de errores u omisiones en el contenido. Aunque nos esforzamos por mantener la información actualizada y precisa, no garantizamos la exactitud, fiabilidad o disponibilidad de la información. En cambio en cuanto al apartado de entradas y merchandising no nos haremos cargo de comprar una entrada para despues no poder o no haber ido al zoo ese dia",
+  "Normativa del Zoo": "En FataZoo, pedimos a todos los visitantes que respeten nuestras normas para garantizar la seguridad y el bienestar de nuestros animales y visitantes. No se permite alimentar a los animales, tocar las vallas ni hacer ruido excesivo. Gracias por su cooperación.",
+  "Terminos y Condiciones": "Al utilizar nuestro sitio web, usted acepta nuestros términos y condiciones. Lea detenidamente antes de utilizar nuestro sitio web. Al acceder o utilizar este sitio web, usted acepta estar legalmente vinculado por estos términos y condiciones."
 }

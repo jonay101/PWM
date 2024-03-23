@@ -2,25 +2,25 @@
   "Entradas": [
     {
       "nombre": "Entrada VIP",
-      "costo": 50.00,
+      "coste": 50.00,
       "cantidad": 1,
       "imagen": "algo"
     },
     {
       "nombre": "Entrada General",
-      "costo": 30.00,
+      "coste": 30.00,
       "cantidad": 2,
       "imagen": "algo"
     },
     {
       "nombre": "Entrada Estudiante",
-      "costo": 20.00,
+      "coste": 20.00,
       "cantidad": 3,
       "imagen": "algo"
     },
     {
       "nombre": "Entrada Niño",
-      "costo": 10.00,
+      "coste": 10.00,
       "cantidad": 4,
       "imagen": "algo"
     }
@@ -28,25 +28,25 @@
   "Merchandising": [
     {
       "nombre": "Camiseta con logo",
-      "costo": 15.99,
+      "coste": 15.99,
       "cantidad": 5,
       "imagen": "algo"
     },
     {
       "nombre": "Gorra bordada",
-      "costo": 12.50,
+      "coste": 12.50,
       "cantidad": 2,
       "imagen": "algo"
     },
     {
       "nombre": "Taza de colección",
-      "costo": 8.99,
+      "coste": 8.99,
       "cantidad": 3,
       "imagen": "algo"
     },
     {
       "nombre": "Póster autografiado",
-      "costo": 20.00,
+      "coste": 20.00,
       "cantidad": 1,
       "imagen": "algo"
     }

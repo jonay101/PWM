@@ -1,5 +1,5 @@
 
-  (function () {
+  (async function () {
     function filterAnimals(category) {
       const animals = document.querySelectorAll(".Animal");
 
@@ -23,8 +23,6 @@
 
     function filtrar(category, event) {
       event.preventDefault();
-
-      // Obtener todos los botones de filtro
       const filterButtons = document.querySelectorAll(".filtro-catalogo");
 
       // Remover la clase 'active-btn' de todos los botones
@@ -34,14 +32,12 @@
 
       // Agregar la clase 'active-btn' al botón clickeado
       event.target.classList.add("active-btn");
-
-      // Filtrar animales según la categoría del botón clickeado
       filterAnimals(category);
     }
 
-    if (document.readyState === 'loading') {  // Si el documento aún se está cargando
+    if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', addListeners);
-    } else {  // Si el documento ya está cargado
+    } else {
       addListeners();
     }
   })();

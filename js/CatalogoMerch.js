@@ -4,11 +4,15 @@
   let precios = ["15 €", "25 €", "35 €", "45 €", "55 €"];
 
   let catalogoMerchandising = document.querySelector("main ul");
+  let fragmento = document.createDocumentFragment();
+
   for (i = 0; i < productos.length; i++) {
     let nuevoElemento = template.cloneNode(true);
     nuevoElemento.querySelector('.info').textContent = productos[i];
     nuevoElemento.querySelector('.precio').textContent = precios[i];
     nuevoElemento.querySelector('.cantidad').textContent = "1";
-    catalogoMerchandising.appendChild(nuevoElemento);
+    fragmento.appendChild(nuevoElemento);
   }
+
+  catalogoMerchandising.appendChild(fragmento);
 })();

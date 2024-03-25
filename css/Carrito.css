@@ -19,6 +19,11 @@ main section {
   word-wrap: break-word;
 }
 
+main section div {
+  display: flex;
+  justify-content: center;
+}
+
 main section#lista-entradas {
   grid-column: 1;
 }

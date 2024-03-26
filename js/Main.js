@@ -15,6 +15,8 @@ async function cargarEstructura() {
     enlaces.forEach(enlace => {
       enlace.addEventListener('click', cargarPagina);
     });
+    let carrito = await window.cargarJSON("Carrito.json");
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
 async function cargarTemplate(url) {

@@ -4,25 +4,25 @@
       "nombre": "Entrada VIP",
       "coste": 50.00,
       "cantidad": 1,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Entrada General",
       "coste": 30.00,
       "cantidad": 2,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Entrada Estudiante",
       "coste": 20.00,
       "cantidad": 3,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Entrada Niño",
       "coste": 10.00,
       "cantidad": 4,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     }
   ],
   "merchandising": [
@@ -30,25 +30,25 @@
       "nombre": "Camiseta con logo",
       "coste": 15.99,
       "cantidad": 5,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Gorra bordada",
       "coste": 12.50,
       "cantidad": 2,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Taza de colección",
       "coste": 8.99,
       "cantidad": 3,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     },
     {
       "nombre": "Póster autografiado",
       "coste": 20.00,
       "cantidad": 1,
-      "imagen": "../img/twitter-outlined.png"
+      "imagen": "twitter-outlined.png"
     }
   ],
   "Total": 150

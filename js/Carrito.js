@@ -2,7 +2,8 @@
   let template = (await window.cargarSubTemplate("../html/ListadoCarrito.html"));
   let elementoLista = template.querySelector("ul li");
 
-  let datos = await window.cargarJSON("Carrito.json");
+  //let datos = await window.cargarJSON("Carrito.json");
+  let datos = JSON.parse(localStorage.getItem('carrito'));
 
   let mainElement = document.querySelector("main");
   mainElement.appendChild(template.querySelector("link"));
@@ -32,7 +33,7 @@ function insertarFragmento(listado, datos, elementoLista) {
     nuevoElemento.querySelector('.informacion').textContent = elementos[i]["nombre"];
     nuevoElemento.querySelector('.precio').textContent = `${elementos[i]["coste"]} €`;
     nuevoElemento.querySelector('.cantidad').textContent = elementos[i]["cantidad"];
-    nuevoElemento.querySelector('.imagen').src = elementos[i]["imagen"];
+    nuevoElemento.querySelector('.imagen').src = "../img/"+elementos[i]["imagen"];
     fragmento.appendChild(nuevoElemento);
   }
   ulDivListado.appendChild(fragmento);

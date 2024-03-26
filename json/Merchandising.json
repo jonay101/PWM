@@ -3,26 +3,27 @@
     {
       "nombre": "Camiseta con logo",
       "coste": 15.99,
-      "cantidad": 5,
-      "imagen": "algo"
+      "imagen": "camisetaEntradaTigres.jpeg"
     },
     {
-      "nombre": "Gorra bordada",
+      "nombre": "Gorra panda",
       "coste": 12.50,
-      "cantidad": 2,
-      "imagen": "algo"
+      "imagen": "gorrapanda.jpeg"
     },
     {
-      "nombre": "Taza de colección",
+      "nombre": "Taza de jirafas",
       "coste": 8.99,
-      "cantidad": 3,
-      "imagen": "algo"
+      "imagen": "taza_jirafas_gatoxtra.jpeg"
     },
     {
-      "nombre": "Póster autografiado",
+      "nombre": "camiseta tigres",
+      "coste": 17.99,
+      "imagen": "camiseta_tigres.jpeg"
+    },
+    {
+      "nombre": "Camiseta hipopotamo",
       "coste": 20.00,
-      "cantidad": 1,
-      "imagen": "algo"
+      "imagen": "camiseta_hipopotamo_trajes.jpeg"
     }
   ]
 }

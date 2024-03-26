@@ -60,4 +60,21 @@
   .footer img:hover{
     transform:  scale(0.8);
   }
+  .footer{
+    padding-top: 300px;
+  }
+}
+
+@media only screen and (max-width: 834px){
+  .footer nav a{
+    margin-right: 20px;
+  }
+
+  .footer nav:last-child{
+    margin-right: 0px;
+  }
+
+  .footer nav{
+    width: auto;
+  }
 }

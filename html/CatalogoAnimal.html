@@ -2,62 +2,69 @@
 <main>
   <script src="../js/FiltroAnimal.js"></script>
   <div class="contenedor-catalogo">
-    <section class="cabeza-catalogo">
-      <h1>Catalogo de los animales del zoo.</h1>
-      <aside class="filtros-catalogo" >
-        <p> FILTROS: </p>
-        <button type="button" class="filtro-catalogo active-btn" id = "All">All</button>
-        <button type="button" class="filtro-catalogo " id = "Aves">Aves</button>
-        <button type="button" class="filtro-catalogo " id = "Peces">Peces</button>
-        <button type="button" class="filtro-catalogo " id = "Mamiferos">Mamiferos</button>
-        <button type="button" class="filtro-catalogo " id = "Herbivoros">Herbivoros</button>
-        <button type="button" class="filtro-catalogo " id = "Carnivoros">Carnivoros</button>
-      </aside>
-    </section>
+
+  <section class="cabeza-catalogo">
+    <h1>Catalogo de los animales del zoo.</h1>
+    <div class="dropdown">
+      <button class="dropbtn">FILTROS</button>
+      <div class="dropdown-content">
+        <button type="button" class="filtro-catalogo active-btn" id="All">All</button>
+        <button type="button" class="filtro-catalogo" id="Aves">Aves</button>
+        <button type="button" class="filtro-catalogo" id="Peces">Peces</button>
+        <button type="button" class="filtro-catalogo" id="Mamiferos">Mamíferos</button>
+        <button type="button" class="filtro-catalogo" id="Herbivoros">Herbívoros</button>
+        <button type="button" class="filtro-catalogo" id="Carnivoros">Carnívoros</button>
+      </div>
+    </div>
+  </section>
 
     <ul class="animales">
       <li class="Animal Aves">
         <div class="animal-img">
-          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+          <img src="/img/animalGenerel.png" alt="Descripción del animal" class="animal-img">
         </div>
         <div class="animalDescription">
           <h2 class="animal_name">Nombre del animal tipo aves</h2>
-          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
           <p class="categoria"> Categories:
             <span> Aves </span></p>
-          </div>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+
+        </div>
         </li>
       <li class="Animal Peces">
         <div class="animal-img">
-          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+          <img src="/img/animalGenerel.png" alt="Descripción del animal" class="animal-img">
         </div>
         <div class="animalDescription">
           <h2 class="animal_name">Nombre del animal tipo peces</h2>
-          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
           <p class="categoria"> Categories:
             <span> Peces </span></p>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+
         </div>
       </li>
       <li class="Animal Mamiferos">
         <div class="animal-img">
-          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+          <img src="/img/animalGenerel.png" alt="Descripción del animal" class="animal-img">
         </div>
         <div class="animalDescription">
           <h2 class="animal_name">Nombre del animal tipo mamifero</h2>
-          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
           <p class="categoria"> Categories:
             <span> Mamiferos </span></p>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+
         </div>
       </li>
       <li class="Animal Herbivoros">
         <div class="animal-img">
-          <img src="/img/twitter-outlined.png" alt="Descripción del animal" class="animal-img">
+          <img src="/img/animalGenerel.png" alt="Descripción del animal" class="animal-img">
         </div>
         <div class="animalDescription">
           <h2 class="animal_name">Nombre del animal herbivoro</h2>
-          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
           <p class="categoria"> Categories:
             <span> Herbivoros </span></p>
+          <a class="nav-item" href="DatosAnimal.html" title="Link title">Ver más</a>
+
         </div>
       </li>
     </ul>

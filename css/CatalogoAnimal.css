@@ -10,8 +10,6 @@ body {
   padding: 0 1rem;
 }
 
-
-
 .cabeza-catalogo{
   text-align: center;
 }
@@ -27,7 +25,7 @@ body {
   font-size: 1.5rem;
 }
 
-.filtros-catalogo{
+.dropdown-content{
   padding: 0.6rem;
   display: flex;
   justify-content: center;
@@ -39,11 +37,12 @@ body {
   background: none;
   border: none;
   color: #FFFFFF;
-  display: block;
+  display: flex;
   margin: 0 1rem;
   cursor: pointer;
   outline: 0;
   transition: opacity 0.4s ease-out;
+  flex-direction: row;
 }
 
 .filtro-catalogo::after{
@@ -104,7 +103,7 @@ body {
 }
 
 .animal a{
-  margin-left: 100px;
+  text-align: right;
 }
 
 .animal_name{
@@ -138,15 +137,60 @@ body {
   }
 }
 
-/*@media screen and(min-width: 768px){
-  .cabeza-catalogo p{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+@media only screen and (max-width: 600px){
+
+  .animales{
+    width: 80%;
+    justify-content: center;
   }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-content button:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px){
   .cabeza-catalogo p{
     width: 50%;
   }
@@ -155,39 +199,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     column-gap: 2rem;
   }
-}*/
-
-@media only screen and (max-width: 600px){
-
-  .animales{
-    display: grid;
-    column-gap: 2rem;
-    width: 80%;
-    height: 50%;
+  .dropbtn{
+    display: none;
   }
-
-  .animal_name{
-    color: #b3d4fc;
-    font-size: medium;
-    text-transform: capitalize;
-    margin-left: 150px;
-  }
-
-  .categoria{
-    padding-top: 0.2rem;
-    font-weight: 800;
-    margin-left: 150px;
-    font-size: smaller;
-
-  }
-
-  .categoria span{
-    font-size: smaller;
-  }
-
-  .animal a{
-    margin-left: 150px;
-    font-size: smaller;
-  }
-
 }

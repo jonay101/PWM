@@ -132,3 +132,12 @@
   }
 
 }
+
+@media only screen and (max-width: 834px){
+  .header nav {
+    width: fit-content;
+  }
+  .header{
+    padding-left: 100px;
+  }
+}

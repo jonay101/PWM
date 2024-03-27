@@ -100,6 +100,12 @@ textarea {
   clear: both;
 }
 
+@media only screen and (max-width: 834px){
+  html {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 600px){
   body{
     overflow-x: hidden;

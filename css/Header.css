@@ -85,6 +85,24 @@
   font: bold 1.2rem verdana, sans-serif;
 }
 
+@media only screen and (max-width: 834px) {
+
+  .header nav {
+    width: fit-content;
+  }
+  .header .logo-container {
+    padding-left: 2%;
+  }
+  .header{
+    align-items: flex-start;
+    padding-right: 1px;
+  }
+  .header nav ul li{
+    margin-right: 3rem;
+  }
+
+}
+
 @media only screen and (max-width: 600px){
   .header {
     background: #b3d4fc;
@@ -131,13 +149,4 @@
     transform: scale(0.55);
   }
 
-}
-
-@media only screen and (max-width: 834px){
-  .header nav {
-    width: fit-content;
-  }
-  .header{
-    padding-left: 100px;
-  }
 }

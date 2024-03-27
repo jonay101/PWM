@@ -20,7 +20,24 @@ function cargarListenersEliminar() {
 }
 
 function eliminarElemento(evt) {
+  let carrito = JSON.parse(window.localStorage.getItem("carrito"));
+
   let elementoCarrito = evt.target.parentNode.parentNode.parentNode;
+  let nombreListado = obtenerTituloListado(elementoCarrito);
+  let datosCarrito = carrito[nombreListado];
+
+  let nombreElementoEliminar = elementoCarrito.querySelectorAll("li ul li")[1].textContent;
+  let elementoCarritoEliminar = datosCarrito.find(e => e.nombre === nombreElementoEliminar);
+  if (elementoCarritoEliminar) {
+    let indice = datosCarrito.indexOf(elementoCarritoEliminar);
+    datosCarrito.splice(indice, 1);
+    console.log(`Eliminado elemento ${nombreElementoEliminar} del carrito`);
+  }
+  else {
+    console.log(`No se ha podido eliminar ${nombreElementoEliminar} del carrito`);
+  }
+
+  window.localStorage.setItem("carrito", JSON.stringify(carrito));
   elementoCarrito.parentNode.removeChild(elementoCarrito);
 }
 
@@ -37,4 +54,8 @@ function insertarFragmento(listado, datos, elementoLista) {
     fragmento.appendChild(nuevoElemento);
   }
   ulDivListado.appendChild(fragmento);
+}
+
+function obtenerTituloListado(elementoCarrito) {
+  return elementoCarrito.parentNode.parentNode.parentNode.querySelector("header").textContent.trim().toLowerCase();
 }

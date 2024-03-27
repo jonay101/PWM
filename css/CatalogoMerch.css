@@ -9,3 +9,11 @@ main ul {
     justify-content: center;
   }
 }
+
+@media only screen and(max-width: 834px) and(min-width: 601px){
+  main ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+}

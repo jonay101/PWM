@@ -124,24 +124,78 @@ body {
   font-weight: 500;
 }
 
-@media screen and (min-width: 600px){
-  .Animal{
-    display: grid;
-    grid-template-columns: 25% auto;
-    align-content: center;
-    padding: 1rem;
-    column-gap: 1rem;
+
+
+
+
+
+
+@media(max-width: 1600px){
+  .dropbtn{
+    display: none;
   }
-  .animalDescription{
-    padding: 0;
+}
+@media(max-width: 834px) {
+  .animales{
+    width: 80%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    display: grid;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-content button:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:focus-within .dropdown-content {
+    display: block;
   }
 }
 
-@media only screen and (max-width: 600px){
+@media(max-width: 600px){
 
   .animales{
     width: 80%;
     justify-content: center;
+    grid-template-columns: none;
   }
   .dropdown {
     position: relative;
@@ -188,18 +242,4 @@ body {
     display: block;
   }
 
-}
-
-@media screen and (min-width: 1200px){
-  .cabeza-catalogo p{
-    width: 50%;
-  }
-  .animales{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 2rem;
-  }
-  .dropbtn{
-    display: none;
-  }
 }

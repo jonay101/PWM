@@ -70,6 +70,14 @@ main section hgroup{
   margin-right: 50px;
 }
 
+@media only screen and (max-width: 834px){
+
+  .imagen_principal{
+    margin-right: 15px;
+  }
+
+}
+
 @media only screen and (max-width: 600px){
   main .foto {
     display: grid;
@@ -81,8 +89,6 @@ main section hgroup{
 
   main .minifoto {
     margin-top: 20px;
-
-
   }
 
   main .descripcion{

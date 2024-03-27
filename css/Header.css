@@ -86,21 +86,22 @@
 }
 
 @media only screen and (max-width: 834px) {
-
   .header nav {
     width: fit-content;
   }
+
   .header .logo-container {
     padding-left: 2%;
   }
+
   .header{
     align-items: flex-start;
     padding-right: 1px;
   }
+
   .header nav ul li{
     margin-right: 3rem;
   }
-
 }
 
 @media only screen and (max-width: 600px){

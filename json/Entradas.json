@@ -1,0 +1,16 @@
+{
+  "Entradas" : [
+    {
+      "nombre": "Entrada general",
+      "coste": 20
+    },
+    {
+      "nombre": "Entrada reducida",
+      "coste": 15
+    },
+    {
+      "nombre": "Entrada infantil",
+      "coste": 10
+    }
+  ]
+}

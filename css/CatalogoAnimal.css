@@ -124,17 +124,10 @@ body {
   font-weight: 500;
 }
 
-
-
-
-
-
-
-@media(max-width: 1600px){
-  .dropbtn{
-    display: none;
-  }
+.dropbtn{
+  display: none;
 }
+
 @media(max-width: 834px) {
   .animales{
     width: 80%;
@@ -142,7 +135,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding-left: 5rem;
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
@@ -196,6 +191,7 @@ body {
     width: 80%;
     justify-content: center;
     grid-template-columns: none;
+    padding-left: 3.5rem;
   }
   .dropdown {
     position: relative;

@@ -62,13 +62,16 @@ main button:hover{
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 834px) {
+  main{
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+  }
   main div#contenedor-carrito {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(3, auto);
     row-gap: 20px;
   }
-
 
   main section#lista-entradas {
     grid-column: 1;
@@ -84,5 +87,13 @@ main button:hover{
     grid-column: 1;
     grid-row: 3;
     margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  main{
+    padding-top: 1rem;
+    padding-bottom: 0;
   }
 }
